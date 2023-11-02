@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-02T12:19:33.371Z",
+    "end": "2023-11-02T12:19:49.508Z",
+    "duration": 16137,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "65ff2e3a-66fe-423e-bd55-8ed36b755bfc",
+      "title": "",
+      "fullFile": "cypress/e2e/3-my-test/test.cy.js",
+      "file": "cypress/e2e/3-my-test/test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0d52ddf-0718-452f-85d2-519871a62e13",
+          "title": "Check with correct password",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should search for a word",
+              "fullTitle": "Check with correct password should search for a word",
+              "timedOut": null,
+              "duration": 8212,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"index.html\");\ncy.get(\"#test\").type(\"Jonathan liker gutter{enter}\", {\n  delay: 250\n});\ncy.get(\"#password\").type(\"password{enter}\", {\n  delay: 250\n});\ncy.get(\"#result\").should(\"have.text\", \"You are in!\", {\n  delay: 250\n});",
+              "err": {},
+              "uuid": "80962fbf-7e86-4428-9563-d7c35d24bf5b",
+              "parentUUID": "e0d52ddf-0718-452f-85d2-519871a62e13",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check with wrong password",
+              "fullTitle": "Check with correct password Check with wrong password",
+              "timedOut": null,
+              "duration": 7867,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"index.html\");\ncy.get(\"#test\").type(\"Jonathan liker gutter{enter}\", {\n  delay: 250\n});\ncy.get(\"#password\").type(\"passwor{enter}\", {\n  delay: 250\n});\ncy.get(\"#result\").should(\"have.text\", \"Wrong password!\", {\n  delay: 250\n});",
+              "err": {},
+              "uuid": "362042db-eb09-4411-8bee-3a6e09f4cffe",
+              "parentUUID": "e0d52ddf-0718-452f-85d2-519871a62e13",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80962fbf-7e86-4428-9563-d7c35d24bf5b",
+            "362042db-eb09-4411-8bee-3a6e09f4cffe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16079,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
